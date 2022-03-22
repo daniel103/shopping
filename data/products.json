@@ -1,0 +1,23 @@
+[
+    {
+        "id": "0777077d-b0d2-47d1-86f6-818c1a1e28f8",
+        "name": "cucumber",
+        "category": "vegetables",
+        "price": 6,
+        "quantity": 1
+    },
+    {
+        "id": "6d905aa0-0bb5-4ef5-b184-8c3417171223",
+        "name": "Banana",
+        "category": "fruit",
+        "price": 5,
+        "quantity": 2
+    },
+    {
+        "id": "ed8c1c83-1bf0-4c81-8104-6d3ca2536817",
+        "name": "water",
+        "category": "drink",
+        "price": 3,
+        "quantity": 3
+    }
+]
