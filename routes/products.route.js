@@ -69,12 +69,13 @@ router.put("/update/:id", (req, res) => {
     if (update < 0) {
       return res.status(400).send("wrong update");
     }
-    updateProduct[update].name = req.body.name
-    updateProduct[update].category = req.body.category
-    updateProduct[update].price = req.body.price
-    updateProduct[update].quantity = req.body.quantity
+    
+    updateProduct[update].name = req.body.name;
+    updateProduct[update].category = req.body.category;
+    updateProduct[update].price = req.body.price;
+    updateProduct[update].quantity = req.body.quantity;
 
-    fs.readFile(`${dataJson}/products.json`, JSON.stringify(updateProduct), (err) => {
+    fs.writeFile(`${dataJson}/products.json`, JSON.stringify(updateProduct), (err) => {
       if(err) res.send("try again");
       res.send("update Product Successfully");
     })
